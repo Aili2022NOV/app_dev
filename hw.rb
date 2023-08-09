@@ -5,3 +5,4 @@
 name = "Ayo"
 
 puts "Hello, #{name}"
+puts "Hello again"
