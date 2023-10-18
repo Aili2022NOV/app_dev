@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+<h1>Welcome to myQuote</h1>
+<p>If you have the mind, we have the quote!</p>
+<h3>Recently Added Quotes</h3>
+<hr />
+<% @quotes.each do |quote| %>
+    <div class="card bg-body-tertiary" style="margin-bottom:10px">
+      <div class="card-body">
+        <p class="card-text"><%= quote.text %>
+        <p class="card-text">Philosopher: <%= quote.philosopher.fname %></p>
+        <p class="card-text">
+          [<a href="/quotes/<%= quote.id %>">View quote's detail</a>]
+        </p>
+      </div>
+    </div>
+  <% end %>
+  
+  
